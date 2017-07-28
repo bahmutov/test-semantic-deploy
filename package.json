@@ -1,6 +1,6 @@
 {
   "name": "test-semantic-deploy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Testing Hexo deploy",
   "main": "index.js",
   "scripts": {
@@ -43,7 +43,7 @@
     "hexo-server": "^0.2.1",
     "semantic-action": "^1.0.1",
     "simple-commit-message": "^3.3.0",
-    "url-to-sha": "^1.0.0"
+    "url-to-sha": "^2.0.0"
   },
   "release": {
     "verifyConditions": "./src/local-action.js",
