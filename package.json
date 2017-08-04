@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "git-last": "^1.0.1",
-    "github-post-release": "^1.12.2",
+    "github-post-release": "^1.13.0",
     "got": "^7.1.0",
     "hexo": "3.3.8",
     "hexo-deployer-git": "^0.3.0",
@@ -54,6 +54,9 @@
       "property": "id"
     },
     "analyzeCommits": "simple-commit-message",
-    "generateNotes": "github-post-release"
+    "generateNotes": {
+      "path": "github-post-release",
+      "type": "deploy"
+    }
   }
 }
