@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "hexo clean",
     "generate": "hexo generate",
-    "postgenerate": "git-last -f public/build.json",
+    "postgenerate": "git-last -f public/build.json && cat public/build.json",
     "predeploy": "npm run generate",
     "deploy": "hexo deploy",
     "start": "hexo server",
