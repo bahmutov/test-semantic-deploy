@@ -42,11 +42,12 @@
     "hexo-renderer-marked": "0.3.0",
     "hexo-renderer-stylus": "0.3.3",
     "hexo-server": "^0.2.1",
-    "semantic-action": "^1.0.1",
+    "semantic-action": "^1.1.0",
     "simple-commit-message": "^3.3.0",
     "url-to-sha": "^2.0.0"
   },
   "release": {
+    "tagPrefix": "deploy-",
     "verifyConditions": "./src/local-action.js",
     "getLastRelease": {
       "path": "url-to-sha",
