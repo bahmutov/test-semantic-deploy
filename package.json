@@ -11,7 +11,7 @@
     "predeploy": "npm run generate",
     "deploy": "hexo deploy",
     "start": "hexo server",
-    "semantic-deploy": "DEBUG=semantic-action npm_config_loglevel=verbose semantic-action pre && npm run deploy"
+    "semantic-deploy": "semantic-action pre && npm run deploy && semantic-action post"
   },
   "private": true,
   "repository": {
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "git-last": "^1.0.1",
+    "github-post-release": "^1.12.2",
     "got": "^7.1.0",
     "hexo": "3.3.8",
     "hexo-deployer-git": "^0.3.0",
@@ -52,6 +53,7 @@
       "url": "https://glebbahmutov.com/test-semantic-deploy/build.json",
       "property": "id"
     },
-    "analyzeCommits": "simple-commit-message"
+    "analyzeCommits": "simple-commit-message",
+    "generateNotes": "github-post-release"
   }
 }
